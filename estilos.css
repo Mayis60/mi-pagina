@@ -21,3 +21,5 @@ button:active{transform:translateY(1px)}
 :focus-visible{outline:3px solid var(--hoja);outline-offset:2px}
 #mensaje{margin:10px 0 0;min-height:1.5em;font-weight:700;color:var(--hoja);text-align:center}
 footer{padding-top:28px;padding-bottom:28px;text-align:center;font-size:.875rem}
+#lista .detalle{font-size:.9375rem}
+#lista .vacio{display:block;background:none;padding:0}
