@@ -1,0 +1,23 @@
+:root{--girasol:#F6B400;--cafe:#3B2A20;--crema:#FFF7E8;--hoja:#4E6B3A;--arena:#F1E4CC}
+*{box-sizing:border-box}
+body{margin:0;background:var(--crema);color:var(--cafe);font:400 1rem/1.5 "DM Sans",system-ui,sans-serif}
+h1,h2{font-family:Fraunces,Georgia,serif;font-weight:800;line-height:1.15;margin:0}
+.portada{background:var(--girasol);text-align:center;padding:32px 16px 28px}
+.sol{font-size:3rem;margin:0}
+.portada h1{font-size:2rem}
+.frase{margin:8px 0 0;font-size:1.125rem}
+main,footer{max-width:32rem;margin:0 auto;padding:0 16px}
+section{padding:28px 0 0}
+h2{font-size:1.5rem;font-weight:600;margin-bottom:14px}
+.prendas{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.prendas li{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--arena);border-radius:14px;padding:16px}
+.nombre{font-weight:700}
+.precio{font-family:Fraunces,Georgia,serif;font-weight:800;font-size:1.25rem}
+form{display:grid;gap:6px;background:var(--arena);border-radius:14px;padding:16px}
+label{font-weight:700;margin-top:8px}
+select{width:100%;min-height:48px;font:inherit;color:var(--cafe);background:#fff;border:2px solid var(--cafe);border-radius:10px;padding:0 10px}
+button{min-height:52px;margin-top:16px;font:700 1.0625rem "DM Sans",sans-serif;color:var(--cafe);background:var(--girasol);border:2px solid var(--cafe);border-radius:999px;cursor:pointer}
+button:active{transform:translateY(1px)}
+:focus-visible{outline:3px solid var(--hoja);outline-offset:2px}
+#mensaje{margin:10px 0 0;min-height:1.5em;font-weight:700;color:var(--hoja);text-align:center}
+footer{padding-top:28px;padding-bottom:28px;text-align:center;font-size:.875rem}
