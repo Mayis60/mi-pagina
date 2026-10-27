@@ -1,1 +1,67 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><title>mi-pagina</title></head><body><h1>Todavía no hay nada aquí</h1></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boutique El Girasol | Aparta tu prenda</title>
+  <meta name="description" content="Aparta tu prenda en Boutique El Girasol: Vestido Casual, Pantalón Formal o Blusa Estampada.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Fraunces:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="portada">
+    <p class="sol" aria-hidden="true">🌻</p>
+    <h1>Boutique El Girasol</h1>
+    <p class="frase">Ropa que te hace sentir como un día soleado.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="prendas">
+      <h2 id="prendas">Nuestras prendas</h2>
+      <ul class="prendas">
+        <li><span class="nombre">Vestido Casual</span><span class="precio">$1,500</span></li>
+        <li><span class="nombre">Pantalón Formal</span><span class="precio">$1,200</span></li>
+        <li><span class="nombre">Blusa Estampada</span><span class="precio">$700</span></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="apartar">
+      <h2 id="apartar">Aparta la tuya</h2>
+      <form id="apartado">
+        <label for="prenda">Prenda</label>
+        <select id="prenda" name="prenda" required>
+          <option value="" selected disabled>Elige una prenda</option>
+          <option>Vestido Casual</option>
+          <option>Pantalón Formal</option>
+          <option>Blusa Estampada</option>
+        </select>
+
+        <label for="talla">Talla</label>
+        <select id="talla" name="talla" required>
+          <option value="" selected disabled>Elige tu talla</option>
+          <option>CH</option>
+          <option>M</option>
+          <option>G</option>
+          <option>XG</option>
+        </select>
+
+        <label for="sucursal">Sucursal</label>
+        <select id="sucursal" name="sucursal" required>
+          <option value="" selected disabled>Elige una sucursal</option>
+          <option>Centro</option>
+          <option>Norte</option>
+          <option>Sur</option>
+        </select>
+
+        <button type="submit">Apartar</button>
+        <p id="mensaje" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><p>Boutique El Girasol · Centro, Norte y Sur · Aguascalientes</p></footer>
+  <script src="app.js"></script>
+</body>
+</html>
